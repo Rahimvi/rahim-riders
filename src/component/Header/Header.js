@@ -20,7 +20,7 @@ const Header = () => {
                             <Link to="/destination" className="nav-link text-dark fw-bold">Destination</Link>
                             <Link className="nav-link text-dark fw-bold" href="#">Blog</Link>
                             <Link to="/contact" className="nav-link text-white bg-secondary" tabindex="-1" aria-disabled="true">Login</Link>
-                            <p className="nav-link">{loggedInUser.email}</p>
+                            <p className="nav-link">{loggedInUser.name}</p>
                         </div>
                     </div>
                 </div>

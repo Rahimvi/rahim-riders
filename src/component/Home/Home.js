@@ -12,7 +12,7 @@ const Home = () => {
         <div>
             <div className="vehicles">
                 {
-                    vehicles.map(vehicles => <Vehicles vehicles={vehicles}></Vehicles>)
+                    vehicles.map(vehicles => <Vehicles vehicles={vehicles} key={vehicles.id}></Vehicles>)
                 }
             </div>
         </div>

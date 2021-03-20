@@ -21,16 +21,16 @@ function App() {
     <Router>
       <Header></Header>
       <Switch>
-          <Route path="/home">
+          <Route exact path="/">
               <Home></Home>
           </Route>
-          <Route exact path="/">
+          <Route path="/home">
               <Home></Home>
           </Route>
           <PrivateRoute path="/destination/:vehiclesId">
               <Destination></Destination>
           </PrivateRoute>
-          <Route path='/contact'>
+          <Route path="/contact">
               <Contact></Contact>
           </Route>
           <Route path="*">

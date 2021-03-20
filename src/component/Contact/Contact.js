@@ -6,7 +6,6 @@ import './Contact.css';
 import { useHistory, useLocation } from 'react-router';
 import { UserContext } from '../../App';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faUserFriends } from '@fortawesome/free-solid-svg-icons'
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 
 if (!firebase.apps.length) {
@@ -44,6 +43,7 @@ function Contact() {
       setUser(signedInUser);
       setLoggedInUser(signedInUser);
       history.replace(from);
+      console.log(signedInUser);
     })
     .catch(err => {
       console.log(err);
