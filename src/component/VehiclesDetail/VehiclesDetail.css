@@ -1,0 +1,11 @@
+.img-container {
+    align-items: center;
+}
+
+.img-container img {
+    width: 100px;
+}
+/* .icon {
+    width: 20px;
+    background-color: black;
+} */
